@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edwin's Chat Application</title>
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="initScreen" align="center">
+      <h1>Welcome to Edwin's Customer Support.</h1>
+      <br />
+      <h3>What is your name?</h3>
+      <br />
+      <input
+        type="text"
+        class="namebox"
+        id="username"
+        placeholder="Enter Your Name"
+      />
+
+      <button class="sndBtn" onclick="createLobby()">
+        Submit <i class="fas fa-reply"></i>
+      </button>
+      <br /><br />
+    </div>
+
+    <div id="lobbyScreen" style="display: none;">
+      <input
+        type="text"
+        class="chatbox"
+        id="message"
+        placeholder="What do you need help with?"
+      />
+
+      <button class="sndBtn" onclick="sndMsg()">
+        Send <i class="fas fa-reply"></i>
+      </button>
+    </div>
+  </body>
+</html>
