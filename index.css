@@ -29,6 +29,9 @@ h3 {
   height: 30px;
   width: 80px;
   border-radius: 100px;
+  border: 1px solid #c1c1c1;
+  background-color: #333333;
+  color: #f1f1f1;
 }
 
 .namebox {
@@ -40,6 +43,7 @@ h3 {
   width: 150px;
   padding: 10px;
   background-color: transparent;
+  border: 1px solid rgb(193, 193, 193);
 }
 
 .chatbox {
@@ -51,6 +55,7 @@ h3 {
   width: 400px;
   padding: 10px;
   background-color: transparent;
+  border: 1px solid rgb(193, 193, 193);
 }
 
 #lobbyScreen {
@@ -61,8 +66,10 @@ h3 {
   display: flex;
   align-items: end;
   width: 100%;
-  justify-content: center;
   padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #initScreen {
