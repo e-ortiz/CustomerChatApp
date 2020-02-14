@@ -53,10 +53,12 @@ function sndMsg() {
   let message = $("#message").val();
   console.log(message);
   console.log(userName);
-  firebase
+  let messageRef = firebase
     .database()
     .ref("lobby")
     .child(lobbyid)
-    .child(userName)
-    .set(message);
-}
+    .push({
+      user: userName,
+      message: message
+    });
+  }
